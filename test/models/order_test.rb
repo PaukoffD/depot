@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: orders
+#
+#  id         :integer          not null, primary key
+#  name       :string
+#  address    :text
+#  email      :string
+#  pay_type   :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 #---
 # Excerpted from "Agile Web Development with Rails 5",
 # published by The Pragmatic Bookshelf.

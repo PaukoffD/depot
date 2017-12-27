@@ -1,11 +1,16 @@
-#---
-# Excerpted from "Agile Web Development with Rails 5",
-# published by The Pragmatic Bookshelf.
-# Copyrights apply to this code. It may not be used to create training material,
-# courses, books, articles, and the like. Contact us if you are in doubt.
-# We make no guarantees that this code is fit for any purpose.
-# Visit http://www.pragmaticprogrammer.com/titles/rails5 for more book information.
-#---
+# == Schema Information
+#
+# Table name: orders
+#
+#  id         :integer          not null, primary key
+#  name       :string
+#  address    :text
+#  email      :string
+#  pay_type   :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 require 'active_model/serializers/xml'
 class Order < ApplicationRecord
   include ActiveModel::Serializers::Xml

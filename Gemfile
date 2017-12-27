@@ -50,14 +50,16 @@ gem 'capistrano-passenger', group: :development
 #END:capistrano
 
 group :development, :test do
+  gem 'annotate'
   gem 'byebug', platform: :mri
   gem 'better_errors'
   gem 'binding_of_caller'
 
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'shoulda-matchers'
+  gem 'rails-controller-testing'
 end
 
 group :test do
